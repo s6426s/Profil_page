@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile Page</title>
+
+    <style>
+
+        * {
+
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+            font-family: Arial, sans-serif;
+
+        }
+
+
+        body {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 100vh;
+
+            background-color: #f0f2f5;
+
+        }
+
+
+        .container {
+
+            display: flex;
+
+            width: 800px;
+
+            background-color: #ffffff;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            overflow: hidden;
+
+        }
+
+
+        .left-panel {
+
+            width: 40%;
+
+            padding: 20px;
+
+            text-align: center;
+
+            background-color: #d8e5f9;
+
+        }
+
+
+        .left-panel img {
+
+            width: 80px;
+
+            height: 80px;
+
+            border-radius: 50%;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .left-panel h2 {
+
+            font-size: 1.2rem;
+
+            margin-bottom: 5px;
+
+        }
+
+
+        .left-panel p {
+
+            font-size: 0.9rem;
+
+            color: #888;
+
+            margin-bottom: 10px;
+
+        }
+
+
+        .left-panel button {
+
+            padding: 8px 16px;
+
+            margin: 5px;
+
+            border: none;
+
+            border-radius: 4px;
+
+            cursor: pointer;
+
+        }
+
+
+        .follow-button {
+
+            background-color: #007bff;
+
+            color: #fff;
+
+        }
+
+
+        .message-button {
+
+            background-color: #e2e6ea;
+
+            color: #333;
+
+        }
+
+
+        .contact-links {
+
+            margin-top: 20px;
+
+            list-style-type: none;
+
+            color: #555;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .contact-links li {
+
+            margin: 8px 0;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+        }
+
+
+        .right-panel {
+
+            width: 60%;
+
+            padding: 20px;
+
+        }
+
+
+        .details {
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .details h3 {
+
+            font-size: 1rem;
+
+            color: #007bff;
+
+            font-weight: normal;
+
+            margin-bottom: 8px;
+
+        }
+
+
+        .details p {
+
+            font-size: 0.9rem;
+
+            margin: 5px 0;
+
+        }
+
+
+        .project-status {
+
+            margin-top: 20px;
+
+        }
+
+
+        .project-status h3 {
+
+            font-size: 1rem;
+
+            color: #007bff;
+
+            font-weight: normal;
+
+        }
+
+
+        .status-bar {
+
+            display: flex;
+
+            align-items: center;
+
+            margin: 10px 0;
+
+        }
+
+
+        .status-title {
+
+            width: 50%;
+
+            font-size: 0.9rem;
+
+        }
+
+
+        .progress {
+
+            width: 50%;
+
+            background-color: #e2e6ea;
+
+            height: 5px;
+
+            border-radius: 5px;
+
+            overflow: hidden;
+
+            position: relative;
+
+        }
+
+
+        .progress .progress-fill {
+
+            background-color: #007bff;
+
+            height: 100%;
+
+            width: 0;
+
+            transition: width 0.5s;
+
+        }
+
+
+        .progress-fill.web-design { width: 80%; }
+
+        .progress-fill.website-markup { width: 80%; }
+
+        .progress-fill.one-page { width: 1000%; }
+
+        .progress-fill.mobile-template { width: 90%; }
+
+        .progress-fill.backend-api { width: 70%; }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="left-panel">
+
+            <img src="mypic.jpg" alt="Profile Picture">
+
+            <h2>Ellapu Srinivas</h2>
+
+            <p>Software Developer @Tech-m<br>Hyderabad,TS,IN</p>
+
+            <button class="follow-button">Follow</button>
+
+            <button class="message-button">Message</button>
+
+            <ul class="contact-links">
+
+                <li><strong>ghgh:</strong> https://github.com/s6426s</li>
+
+                <li><strong>Github:</strong> https://github.com/s6426s</li>
+
+                <li><strong>Instagram:</strong> srinivas_ellapu</li>
+
+                <li><strong> Facebook:</strong> E Srinivas</li>
+
+                <li><strong>Linkedin:</strong> linkedin.com/in/srinivas-ellapu-172344196/</li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="right-panel">
+
+
+            <div class="details">
+
+                <h3>Full Name</h3>
+
+                <p>Ellapu Srinivas</p>
+
+                <h3>Email</h3>
+
+                <p>ES001072113@TechMahindra.com</p>
+
+                <h3>Personal Email</h3>
+
+                <p>ellapusrinivas99@gmail.com</p>
+
+                <h3>Phone</h3>
+
+                <p>+91 6303700547</p>
+
+                <h3>Address</h3>
+
+                <p>Bahadurpally,Hyderabad,Telangana,500043</p>
+
+            </div>
+
+
+            <div class="project-status">
+
+                <h3>Skills</h3>
+
+                <div class="status-bar">
+
+                    <div class="status-title">Web Design</div>
+
+                    <div class="progress"><div class="progress-fill web-design"></div></div>
+
+                </div>
+
+                <div class="status-bar">
+
+                    <div class="status-title">Java</div>
+
+                    <div class="progress"><div class="progress-fill website-markup"></div></div>
+
+                </div>
+
+                <div class="status-bar">
+
+                    <div class="status-title">AWS Cloud</div>
+
+                    <div class="progress"><div class="progress-fill one-page"></div></div>
+
+                </div>
+
+                <div class="status-bar">
+
+                    <div class="status-title">Computer Networks</div>
+
+                    <div class="progress"><div class="progress-fill mobile-template"></div></div>
+
+                </div>
+
+                <div class="status-bar">
+
+                    <div class="status-title">Operating Systems</div>
+
+                    <div class="progress"><div class="progress-fill backend-api"></div></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
